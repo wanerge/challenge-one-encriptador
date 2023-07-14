@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/elemento.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.png" alt="logo" width="120px" height="48px" />
+    </header>
+    <main>
+      <section class="seccion-pri">
+        <textarea
+          id="texto-principal"
+          class="textos"
+          cols="30"
+          rows="10"
+          placeholder="Ingrese el texto aqui"
+        ></textarea>
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-exclamation-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+            />
+          </svg>
+          Solo letras minúsculas y sin acentos
+        </p>
+        <div class="botones-princ">
+          <input
+            id="encriptar"
+            class="boton1"
+            type="button"
+            value="Encriptar"
+          />
+          <input
+            id="desencriptar"
+            class="boton2"
+            type="button"
+            value="Desencriptar"
+          />
+        </div>
+      </section>
+      <section class="seccion-sec">
+        <textarea
+          id="texto-secundario"
+          class="textos"
+          cols="30"
+          rows="10"
+          readonly
+        ></textarea>
+        <img
+          id="imagen"
+          src="images/figura.png"
+          alt="muñeco"
+          width="336px"
+          height="304px"
+        />
+        <div id="mensajes">
+          <p class="mensaje">Ningún mensaje fue encontrado</p>
+          <p class="sugerencia">
+            Ingresa el texto que desees encriptar o desencriptar.
+          </p>
+        </div>
+        <input id="copiar" class="boton2" type="button" value="Copiar" />
+      </section>
+    </main>
+    <footer>
+      <p>
+        Desarrollador del sitio: Wanerge Almanza Velasquez <br />
+        Contacto: https://www.linkedin.com/in/wanerge-almanza-velasquez/
+      </p>
+    </footer>
+  </body>
+</html>

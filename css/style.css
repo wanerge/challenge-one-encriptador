@@ -1,0 +1,209 @@
+* {
+  font-family: "Inter";
+}
+
+body {
+  background: #f3f5fc;
+}
+header {
+  width: 10%;
+  height: auto;
+  display: inline-block;
+  vertical-align: top;
+  margin: 40px 0 0 40px;
+}
+main {
+  width: 85%;
+  display: inline-flex;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+section {
+  display: inline-block;
+  height: 724px;
+}
+.seccion-pri {
+  margin: 0 80px;
+  width: 45%;
+}
+.seccion-pri textarea {
+  background: none;
+  width: 100%;
+  height: 500px;
+  padding: 80px 15px 15px 15px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0a3871;
+  text-transform: lowercase;
+}
+.seccion-pri textarea::placeholder {
+  color: #0a3871;
+}
+
+.seccion-pri p {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  width: auto;
+  height: 18px;
+  opacity: 0.8;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.botones-princ {
+  display: flex;
+  justify-content: space-around;
+}
+
+.botones-princ input {
+  width: 45%;
+}
+
+input {
+  height: 67px;
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.boton1 {
+  background: #0a3871;
+  color: white;
+  border: 1px solid #0a3871;
+}
+.boton1:hover {
+  background: #072b61;
+}
+.boton1:active {
+  background: #081c3b;
+}
+
+.boton2 {
+  background: white;
+  color: #0a3871;
+  border: 1px solid #0a3871;
+}
+.boton2:hover {
+  background: #eff1fa;
+}
+.boton2:active {
+  background: #c3c4cb;
+}
+
+.seccion-sec {
+  background: white;
+  width: 30%;
+  border-radius: 32px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.seccion-sec textarea {
+  background: none;
+  width: 90%;
+  height: 580px;
+  padding: 15px;
+  z-index: 1;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #495057;
+  display: none;
+}
+
+.seccion-sec img {
+  width: 80%;
+  height: auto;
+}
+
+.mensaje {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #343a40;
+  margin-bottom: 16px;
+}
+.sugerencia {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #495057;
+}
+
+.seccion-sec input {
+  width: 80%;
+  height: auto;
+  display: none;
+}
+
+.textos {
+  resize: none;
+  border: none;
+  outline: none;
+}
+
+footer {
+  font-family: "Inter";
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+  text-align: center;
+  background: #495057;
+  color: white;
+}
+footer p {
+  padding: 20px 15px;
+}
+
+@media screen and (max-width: 900px) {
+  header,
+  main {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  main {
+    text-align: center;
+    margin: 0;
+  }
+
+  .seccion-pri,
+  .seccion-sec {
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+    padding: 30px 30px;
+  }
+
+  .seccion-pri textarea,
+  .seccion-sec textarea {
+    height: 300px;
+  }
+
+  .seccion-sec img {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .botones-princ {
+    display: block;
+  }
+  .botones-princ input {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
